@@ -197,6 +197,26 @@ footer q:before,footer q:after
     top: 336px;
     left: 392px;
 }
+#project_seven_link
+{
+    top: 250px;
+    left: 370px;
+}
+#project_eight_link
+{
+    top: 254px;
+    left: 326px;
+}
+#project_nine_link
+{
+    top: 269px;
+    left: 316px;
+}
+#project_ten_link
+{
+    top: 313px;
+    left: 376px;
+}
 nav#project_links
 {
     height:0px;
