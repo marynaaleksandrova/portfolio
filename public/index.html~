@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Maryna Aleksandrova: portfolio</title>
+    <meta name="description" content="Maryna Aleksandrova - graphic designer"/>
+    <meta name="keywords" content="portfolio, webdesigner, graphic designer, Maryna Aleksandrova, html5, css3, freelance"/>
+    <meta name="author" content="Maryna Aleksandrova">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Fav icon -->
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+  <body>
+
+		<div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="/">Home</a>
+          <ul class="nav">
+            <li><a class="social-link twitter-link" href="http://twitter.com/m_aleksandrova" target="_blank" title="Twitter account"></a></li>
+            <li><a class="social-link skype-link" href="skype:aleksandrovamaryna?call" target="_blank" title="Skype account"></a></li>
+            <li><a class="social-link youtube-link" href="http://www.youtube.com/user/aleksandrovamaryna" target="_blank" title="Youtube account"></a></li>
+            <li><a class="social-link graphic-river-link" href="http://graphicriver.net/user/aleksandrovamaryna/portfolio" target="_blank" title="Graphicriver account"></a></li>
+            <li><a class="social-link code-canyon-link" href="http://codecanyon.net/user/aleksandrovamaryna/portfolio" target="_blank" title="Codecanyon account"></a></li>
+            <li><a class="social-link github-link" href="https://github.com/marynaaleksandrova" target="_blank" title="GitHub account"></a></li>
+          </ul>
+          <a class="email" href="mailto:hello@marynaaleksandrova.info">hello@marynaaleksandrova.info</a>
+        </div>
+      </div>
+    </div>
+
+    <article id="dashboard-container" class="page-container active">
+      <div class="container">
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>Hello, I'm Maryna Aleksandrova</h1>
+        <p>Web designer located in Ukraine. I like smart design, clear ideas and modern trends. My love - CSS3 Animations. 
+
+I like to create clean and sematic HTML code.
+I like to experiment with new HTML5 and CSS3 features.
+I like Adobe Illustrator.
+
+I'm contributor to the <a href="http://thenounproject.com">Noun project</a>.
+</p>
+      </div>
+
+      <div class="row">
+        <a href="/works/searchbox" class="nav-link portfolio-item-preview span-one-third" data-porfolio-item-id="searchbox">
+          <img src="images/searchbox-min.png" alt=""/>
+          <h1>SearchBox jQuery plugin</h1>
+        </a>
+        <a href="/works/css3-winter-animation" class="nav-link portfolio-item-preview span-one-third" data-porfolio-item-id="css3-winter-animation">
+          <img src="/images/css_animation-min.png" alt=""/>
+          <h1>CSS3 Animation</h1>
+        </a>
+        <a href="/works/cake-illustration" class="nav-link portfolio-item-preview span-one-third" data-porfolio-item-id="cake-illustration">
+          <img src="/images/cake-min.png" alt=""/>
+          <h1>Cake illustration</h1>
+        </a>
+        <a href="/works/tcomsucks" class="nav-link portfolio-item-preview span-one-third" data-porfolio-item-id="tcomsucks">
+          <img src="/images/tcomsucks-min.png" alt=""/>
+          <h1>T-Com Sucks...</h1>
+        </a>
+        <a href="/works/player-skin" class="nav-link portfolio-item-preview span-one-third" data-porfolio-item-id="player-skin">
+          <img src="/images/player_layout-min.png" alt=""/>
+          <h1>Modern Player Layout</h1>
+        </a>
+        <a href="/works/adrovic" class="nav-link portfolio-item-preview span-one-third" data-porfolio-item-id="adrovic">
+          <img src="images/adrovic-min.png" alt=""/>
+          <h1>Adrovic Rooms</h1>
+        </a>
+        <a href="/works/gosti-me" class="nav-link portfolio-item-preview span-one-third" data-porfolio-item-id="gosti-me">
+          <img src="images/gosti-min.png" alt=""/>
+          <h1>Gosti.me</h1>
+        </a>
+        <a href="/works/symboled" class="nav-link portfolio-item-preview span-one-third" data-porfolio-item-id="symboled">
+          <img src="images/symboled-min.png" alt=""/>
+          <h1>Symboled</h1>
+        </a>
+        <a href="/works/player" class="nav-link portfolio-item-preview span-one-third" data-porfolio-item-id="player">
+          <img src="images/player-min.png" alt=""/>
+          <h1>Player</h1>
+        </a>
+        <a href="/works/berzasoba" class="nav-link portfolio-item-preview span-one-third" data-porfolio-item-id="berzasoba">
+          <img src="images/berzasoba-min.png" alt=""/>
+          <h1>BerzaSoba</h1>
+        </a>
+        <a href="/works/cupcakes" class="nav-link portfolio-item-preview span-one-third" data-porfolio-item-id="cupcakes">
+          <img src="images/cupcakes-min.png" alt=""/>
+          <h1>Cupcakes</h1>
+        </a>
+      </div>
+
+      <footer>
+        <p>&copy; Maryna Aleksandrova 2010-2011</p>
+        <p class="thanks-to">Thanks <a href="designmodo.com">designmodo.com</a> & <a href="rockablethemes.com">rockablethemes.com</a> for great <a href="http://designmodo.com/free-social-media-icon-set/">Free Social Media Bookmarking Set</a>.
+        Thanks <a href="twitter.com">Twitter</a> for <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>.</p>
+      </footer>
+      </div>
+    </article> <!-- /container -->
+
+    <article id="searchbox" class="portfolio-item container page-container inactive">
+      <div class="container">
+      <div class="hero-unit">
+        <h1>SearchBox jQuery plugin</h1>
+        <section class="porfolio-item-description">
+         <p>Created 5 modern UI themes for advanced search box control.</p> 
+         <p class="responsibilities">Was responsible for design and CSS.</p> 
+         <time>December 20, 2011</time>
+         <p class="note">You can <a href="http://codecanyon.net/item/winter-animation/1141054">buy</a> this item on Envato marketplace</p>
+        </section>
+        <iframe src="http://www.screenr.com/embed/BHJs" width="516" height="314" frameborder="0"></iframe>
+      </div>
+      </div>
+    </article>
+ 
+    <article id="css3-winter-animation" class="portfolio-item container page-container inactive">
+      <div class="container">
+      <div class="hero-unit">
+        <h1>CSS3 Winter animation</h1>
+        <section class="porfolio-item-description">
+         <p>CSS3 Animation was created as personal project to expand knowledge in CSS3 Transitions, Transforms and Animations. Inspiration for illustration was driven from nice <a href="http://blog.spoongraphics.co.uk/tutorials/how-to-create-an-intricate-vector-heart-illustration">tutorial</a> by <a href="http://chrisspooner.com/my-sites/">Chris Spooner</a>.</p> 
+         <p class="responsibilities">Was responsible for an idea and implementation.</p> 
+         <time>December 7, 2011</time>
+         <p class="note">You can <a href="http://codecanyon.net/item/winter-animation/980967">buy</a> this item on Envato marketplace.</p>
+        </section>
+        <iframe src="http://www.screenr.com/embed/6GYs" width="516" height="314" frameborder="0"></iframe>
+      </div>
+      </div>
+    </article>
+
+    <article id="cake-illustration" class="portfolio-item container page-container inactive">
+      <div class="container">
+      <div class="hero-unit">
+        <h1>Cake Illustration</h1>
+        <section class="porfolio-item-description">
+          <p>Illustration of fancy cake was created for logo for small bakery in Netherlands. Client asked for illustration of specific cake in specific graphic style. It took me couple of days to copy graphic style from references and couple of days to create illustration. Design was approved from first draft.</p> 
+         <p class="responsibilities">Was responsible for creating illustration.</p> 
+         <time>September 2011</time>
+        </section>
+        <img src="/images/cake-main.png" />
+      </div>
+      </div>
+    </article>
+
+    <article id="tcomsucks" class="portfolio-item container page-container inactive">
+      <div class="container">
+      <div class="hero-unit">
+        <h1>T-Com Sucks...</h1>
+        <section class="porfolio-item-description">
+          <p>Personal project to show my position about the worst Internet service I've ever used in my life. And attempt to push people in Montenegro to change the situation for better.</p> 
+         <p class="responsibilities">Was responsible for idea, design, HTML and CSS.</p> 
+         <time>August 2011</time>
+         <p class="note">You can support the project by <a href="http://tcomsucks.me">voting</a> (but I'm not sure it will change anything).</p>
+        </section>
+        <img src="/images/tcomsucks-main.png" />
+      </div>
+      </div>
+    </article>
+
+    <article id="player-skin" class="portfolio-item container page-container inactive">
+      <div class="container">
+      <div class="hero-unit">
+        <h1>Modern Player Layout</h1>
+        <section class="porfolio-item-description">
+         <p>While I worked on <a href="/works/player">player</a> for Chrome Web Store I drew full set of icons. After that I enhanced them and created this player layout.</p> 
+         <p class="responsibilities">Was responsible for design.</p> 
+         <time>July 2011</time>
+         <p class="note">You can <a href="http://graphicriver.net/item/modern-player-layout/400268">buy</a> this item on Envato marketplace.</p>
+        </section>
+        <img src="/images/player_layout-main.png" />
+      </div>
+      </div>
+    </article>
+
+    <article id="adrovic" class="portfolio-item container page-container inactive">
+      <div class="container">
+      <div class="hero-unit">
+        <h1>Adrovic Rooms</h1>
+        <section class="porfolio-item-description">
+          <p>HTML5/CSS3 single page web site on Google App Engine for Montenegrin private accommodation.</p> 
+         <p class="responsibilities">Was responsible for design, HTML, CSS and content managment.</p> 
+         <time>July 2011</time>
+        </section>
+        <a href="http://adrovic.me" target="_blank"><img src="/images/adrovic-main.png" /></a>
+      </div>
+      </div>
+    </article>
+
+    <article id="gosti-me" class="portfolio-item container page-container inactive">
+      <div class="container">
+      <div class="hero-unit">
+        <h1>Gosti.me</h1>
+        <section class="porfolio-item-description">
+         <p>HTML5/CSS3 single page web application used for tourists registrations in Montenegrin Police.</p> 
+         <p class="responsibilities">Was responsible for design.</p> 
+         <time>May 2011</time>
+        </section>
+        <a href="http://gosti.me" target="_blank"><img src="/images/gosti-main.png" /></a>
+      </div>
+      </div>
+    </article>
+
+    <article id="symboled" class="portfolio-item container page-container inactive">
+      <div class="container">
+      <div class="hero-unit">
+        <h1>Symboled</h1>
+        <section class="porfolio-item-description">
+         <p>One of my favorite works! This work was mentioned by Google Web Store representatives as good example of real Web Application - it solves just one problem and works in web.</p> 
+         <p class="responsibilities">Was responsible for idea, design, HTML and CSS.</p> 
+         <time>April 2011</time>
+        </section>
+        <img src="/images/symboled-main.png" />
+         <p class="note">You can see this <a href="https://chrome.google.com/webstore/detail/nfppedagjlaahbkiciijhhlfgnngjofj">item</a>in Google Chrome Web Store.</p>
+      </div>
+      </div>
+    </article>
+
+    <article id="player" class="portfolio-item container page-container inactive">
+      <div class="container">
+      <div class="hero-unit">
+        <h1>Player</h1>
+        <section class="porfolio-item-description">
+          <p>HTML5 music player that works in browser in the offline mode.</p> 
+         <p class="responsibilities">Was responsible for design.</p> 
+         <time>April 2011</time>
+        </section>
+        <img src="/images/player-main.png" />
+      </div>
+      </div>
+    </article>
+
+    <article id="berzasoba" class="portfolio-item container page-container inactive">
+      <div class="container">
+      <div class="hero-unit">
+        <h1>BerzaSoba</h1>
+        <section class="porfolio-item-description">
+         <p>BerzaSoba is B2B marketplace that connects hotels/private accommodations with tourist agencies in Montenegro.</p> 
+         <p class="responsibilities">Was responsible for logo, promo materials and web site design.</p> 
+         <time>February 2011</time>
+        </section>
+        <a href="http://berzasoba.com" target="_blank"><img src="/images/berzasoba-main.png" /></a>
+      </div>
+      </div>
+    </article>
+
+    <article id="cupcakes" class="portfolio-item container page-container inactive">
+      <div class="container">
+      <div class="hero-unit">
+        <h1>Cupcakes</h1>
+        <section class="porfolio-item-description">
+          <p>One of my first real illustrations in Adobe Illustrator. Driven by idea and keeping in mind "the perfect" picture, I spent some time to achieve it. Illustration became my the most popular item on GraphicRiver Marketplace and brought me some clients.</p> 
+         <p class="responsibilities">Was responsible for idea and illustration.</p> 
+         <time>November 2010</time>
+         <p class="note">You can <a href="http://graphicriver.net/item/cupcakes-iconset/140694">buy</a> this item on Envato marketplace.</p>
+        </section>
+        <img src="/images/cupcakes-main.png" />
+      </div>
+      </div>
+    </article>
+
+    <script src="/js/jquery-1.7.1.min.js"></script>
+    <script src="/js/underscore.js"></script>
+    <script src="/js/backbone.js"></script>
+    <script src="/js/move.js"></script>
+    <script src="/js/app.js"></script>
+    <script>$(function(){App.init();});</script>
+
+<!-- http://99designs.com/web-design/contests/hot-mama-ink-needs-design-97789/designers/564774
+http://99designs.com/web-design/contests/cool-music-start-up-needs-better-site-109549/designers/564774
+http://99designs.com/web-design/contests/ipresslive-needs-great-website-design-107906/designers/564774
+http://99designs.com/web-design/contests/help-fashionsprout-marketplace-website-design-96317/designers/564774
+http://99designs.com/people/marynaaleksandrova/folio
+ -->
+  </body>
+</html>

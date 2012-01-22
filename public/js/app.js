@@ -11,82 +11,95 @@
  *
  * THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-var App={
-    init:function(){
-        App.body=$('html,body')
-        App.navigation=$('#navigation_menu')
-        App.projectsLinks=$('.project_link')
-        App.projectPanelHeight=$(window).height()-50
-        App.categoriesLinks=$('#work li')
+move.select = function(selector){
+  return $(selector).get(0);
+};
+var App = {
+  init: function(){
+    this.appView = new AppView();  
+    this.router = new AppRouter();
+    Backbone.history.start({pushState: true, root: ''});
+  }
+};
 
-        $('.project_link').click(function(e){
-            var selectedProjectLink=$(this),
-                projectId=selectedProjectLink.data('projectId'),
-                topOffset=e.pageY-52
-            selectedProjectLink.addClass('viewed')
+var AppView = Backbone.View.extend({
+  el: $('body'),
+  $dashboard: $('#dashboard-container'),
+  events: {
+    'click .portfolio-item-preview': 'clickPortfolioItem',
+    'click a.nav-link': 'gotoNavLink'
+  },
+  initialize: function(){
+    _.bindAll(this, 'clickPortfolioItem', 'showPortfolioItem', 'showDashboard', 'rightOffscreenPosition', 
+      'leftOffscreenPosition', 'moveRightOffscreen', 'gotoNavLink');
+    this.moveRightOffscreen($('.page-container.inactive'));
+  },
+  // Calculate position for the page that should be placed out off the screen - on the left side.
+  leftOffscreenPosition: function(){ return -1 * this.rightOffscreenPosition(); },
 
-            App.projectImage=$('#'+projectId)
-            App.projectInfo=$('#'+projectId+'_info')
-            App.projectsLinks.hide()
-            App.projectImage.show().animate({
-                height: App.projectPanelHeight
-            }, 1000,
-            function(){
-                App.navigation.hide()
-                App.projectInfo.show()
-            })
-            App.body.animate({
-                scrollTop: topOffset
-            },1000)
+  // Calculate position for the page that should be placed out off the screen - on the right side.
+  rightOffscreenPosition: function(){ return $(window).width() + 10; },
 
-        })
+  // Move page right off the screen.
+  moveRightOffscreen: function(el){ return el.css("left", this.rightOffscreenPosition()); },
 
-        $('section.circle_image').click(function(){
-            App.closeActiveProjectInfoPanel()
-        })
-
-        App.body.keyup(function(e){
-            var keyCode = e.keyCode
-            //escape
-            if(keyCode===27){
-                App.closeActiveProjectInfoPanel()
-            }
-        })
-
-        App.categoriesLinks.click(function(){
-            var selectedCategoryLink=$(this),
-                category = selectedCategoryLink.data('category')
-            App.categoriesLinks.removeClass('active_category')
-            selectedCategoryLink.addClass('active_category')
-
-            if('all'===category){
-                App.projectsLinks.css('opacity',1)
-            }
-            else{
-                App.projectsLinks.css('opacity',0)
-                App.projectsLinks.filter(function(index){
-                    return $(this).data('projectCategory')===category
-                }).css('opacity',1)
-            }
-        })
-    },
-    closeActiveProjectInfoPanel:function(){
-        if(App.projectImage){
-            App.projectImage.animate({
-                height: 0
-            },1000,
-            function(){
-                if(App.projectImage){
-                    App.projectImage.hide()
-                }else{
-                    App.projectImage=null
-                }
-                if(App.projectInfo){
-                    App.projectInfo.hide()
-                }
-                App.navigation.show()
-                App.projectsLinks.show()
-            })
+  // Go to link without refreshing the whole page.
+  gotoNavLink: function(e){
+    e.preventDefault();
+    var link = $(e.currentTarget).attr('href');
+    App.router.gotoPath(link);
+  },
+  clickPortfolioItem: function(e){
+    var item = $(e.currentTarget),
+        itemId = $(item).data('porfolio-item-id');
+    this.showPortfolioItem(itemId);
+  },
+  showPortfolioItem: function(itemId){
+    var itemPage = $('#' + itemId),
+        dashboardPage = this.$dashboard;
+    this.$(this.el).scrollTop(0);
+    move(dashboardPage)
+      .set('left', -2000)
+      .end(function(){
+        itemPage.removeClass('inactive').addClass('active');
+        dashboardPage.removeClass('active').addClass('inactive');
+        move(itemPage)
+          .set('left', 0)
+          .end(function(){
+          });
+      });
+  },
+  showDashboard: function(){
+    var itemPage = $('.portfolio-item.active'),
+        dashboardPage = this.$dashboard;
+    move(dashboardPage)
+      .set('left', 0)
+      .end(function(){
+        dashboardPage.removeClass('inactive').addClass('active');
+        if(itemPage){
+          itemPage.removeClass('active').addClass('inactive');
+          //move(itemPage)
+           // .set('left', -2000)
+           // .end(function(){
+            //});
         }
-    }
-}
+      });
+  }
+
+});
+
+var AppRouter = Backbone.Router.extend({
+  routes:{
+    '/': 'showDashboard',
+    '/works/:id': 'showItem',
+  },
+  gotoPath: function(path){
+    this.navigate(path, true);
+  },
+  showDashboard: function(){
+    App.appView.showDashboard();
+  },
+  showItem: function(id){	
+    App.appView.showPortfolioItem(id);
+  }
+});
