@@ -99,7 +99,8 @@ var AppRouter = Backbone.Router.extend({
   showDashboard: function(){
     App.appView.showDashboard();
   },
-  showItem: function(id){	
+  showItem: function(id){
+    console.log(id);
     App.appView.showPortfolioItem(id);
   }
 });
