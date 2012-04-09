@@ -18,17 +18,32 @@
 
     <!-- Fav icon -->
     <link rel="shortcut icon" href="favicon.ico">
+	<script type="text/javascript">
+
+	      var _gaq = _gaq || [];
+	      _gaq.push(['_setAccount', 'UA-23055994-1']);
+	      _gaq.push(['_setDomainName', '.marynaaleksandrova.info']);
+	      _gaq.push(['_trackPageview']);
+
+	      (function() {
+	        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	      })();
+
+	    </script>
   </head>
   <body>
 
-		<div class="topbar">
+	<div class="topbar">
       <div class="fill">
         <div class="container">
-          <a class="brand" href="/">Home</a>
+          <a class="brand nav-link" href="/">Home</a>
           <ul class="nav">
+			<li><a class="social-link skype-link" href="skype:aleksandrovamaryna?call" target="_blank" title="Skype account"></a></li>
             <li><a class="social-link twitter-link" href="http://twitter.com/m_aleksandrova" target="_blank" title="Twitter account"></a></li>
-            <li><a class="social-link skype-link" href="skype:aleksandrovamaryna?call" target="_blank" title="Skype account"></a></li>
             <li><a class="social-link youtube-link" href="http://www.youtube.com/user/aleksandrovamaryna" target="_blank" title="Youtube account"></a></li>
+			<li><a class="social-link dribbble-link" href="http://dribbble.com/marynaaleksandrova" target="_blank" title="Dribbble account"></a></li>
             <li><a class="social-link graphic-river-link" href="http://graphicriver.net/user/aleksandrovamaryna/portfolio" target="_blank" title="Graphicriver account"></a></li>
             <li><a class="social-link code-canyon-link" href="http://codecanyon.net/user/aleksandrovamaryna/portfolio" target="_blank" title="Codecanyon account"></a></li>
             <li><a class="social-link github-link" href="https://github.com/marynaaleksandrova" target="_blank" title="GitHub account"></a></li>
@@ -45,7 +60,7 @@
         <h1>Hello, I'm Maryna Aleksandrova</h1>
         <p>Web designer located in Ukraine. I like smart design, clear ideas and modern trends. My love - CSS3 Animations. 
 
-I like to create clean and sematic HTML code.
+I like to create clean and semantic HTML code.
 I like to experiment with new HTML5 and CSS3 features.
 I like Adobe Illustrator.
 
@@ -54,6 +69,10 @@ I'm contributor to the <a href="http://thenounproject.com">Noun project</a>.
       </div>
 
       <div class="row">
+		<a href="/works/valentine-card/" class="nav-link portfolio-item-preview span-one-third" data-porfolio-item-id="valentine-card">
+          <img src="images/valentine-card-min.png" alt=""/>
+          <h1>CSS3 Animated Valentine Card</h1>
+        </a>
         <a href="/works/searchbox" class="nav-link portfolio-item-preview span-one-third" data-porfolio-item-id="searchbox">
           <img src="images/searchbox-min.png" alt=""/>
           <h1>SearchBox jQuery plugin</h1>
@@ -107,8 +126,23 @@ I'm contributor to the <a href="http://thenounproject.com">Noun project</a>.
       </footer>
       </div>
     </article> <!-- /container -->
-
-    <article id="searchbox" class="portfolio-item container page-container inactive">
+    
+	<article id="valentine-card" class="portfolio-item container page-container inactive">
+      <div class="container">
+      <div class="hero-unit">
+        <h1>CSS3 Animated Valentine Card</h1>
+        <section class="porfolio-item-description">
+         <p>Valentine Card for my honey. It was attempt to create complex CSS3 animation with different transforms, durations and time delays. The most difficult part was to shake the flask (found out about <a href="http://dev.w3.org/csswg/css3-2d-transforms/#transform-origin-property"> transform-origin property</a>).</p> 
+         <p class="responsibilities">Was responsible for idea and implementation.</p> 
+         <time>February 14, 2012</time>
+         <p class="note">You can see live preview <a href="http://marynaaleksandrova.info/labs/valentine-card/" target="_blank">here</a>. And it's free to use.</p>
+        </section>
+        <iframe src="http://www.screenr.com/embed/Xqys" width="516" height="314" frameborder="0"></iframe>
+      </div>
+      </div>
+    </article>
+	
+	<article id="searchbox" class="portfolio-item container page-container inactive">
       <div class="container">
       <div class="hero-unit">
         <h1>SearchBox jQuery plugin</h1>
