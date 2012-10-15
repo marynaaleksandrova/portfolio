@@ -135,7 +135,11 @@ html, body{
 .porfolio-item-description .note{
   margin-top: 40px;
   font-size: 10px;
-	line-height: 15px;
+  line-height: 15px;
+}
+.porfolio-item-description .note-big{
+  margin-top: 40px;
+  font-size: 13px;
 }
 .topbar .nav{
   float: right;

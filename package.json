@@ -2,7 +2,7 @@
   "author": "Maryna Aleksandrova <hello@marynaaleksandrova.info> (http://marynaaleksandrova.info)",
   "name": "marynaaleksandrova.info",
   "description": "Maryna Aleksandrova portfolio",
-  "version": "1.0.0-25",
+  "version": "1.0.0-26",
   "subdomain": "marynaaleksandrova",
   "domains": [
     "marynaaleksandrova.info"
@@ -14,7 +14,8 @@
   },
   "main": "server.js",
   "engines": {
-    "node": "~0.4.12"
+    "node": "0.8.x",
+    "npm": "1.1.x"
   },
   "dependencies": {
     "express": ">=2.0.0"
