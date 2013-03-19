@@ -52,8 +52,38 @@ module.exports = function(grunt) {
         {
           src: 'dist/robots.txt',
           dest: 'robots.txt'
+        },
+        {
+          src: 'dist/app.js',
+          dest: 'app.js',
+          gzip: true
         }
       ]
+    },
+
+    concat: {
+      options: {
+        separator: ';'
+      },
+      dist: {
+        src: ['js/jquery.js', 'js/app.js'],
+        dest: 'dist/app.js'
+      }
+    },
+
+    uglify: {
+      my_target: {
+        files: {
+          'dist/app.js': ['dist/app.js']
+        }
+      }
+    },
+
+    watch: {
+      src: {
+        files: ['jade/*.jade', 'styl/*.styl', 'js/*.js'],
+        tasks: ['build']
+      }
     }
 
   });
@@ -61,7 +91,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-s3');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('build', ['jade:compile', 'stylus:compile', 's3:upload']);
+  grunt.registerTask('build', ['jade:compile', 'stylus:compile', 'concat:dist']);
+  grunt.registerTask('deploy', ['jade:compile', 'stylus:compile', 'concat:dist', 'uglify:my_target', 's3:upload']);
 
 };
