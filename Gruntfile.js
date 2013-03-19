@@ -62,4 +62,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-s3');
 
+  grunt.registerTask('build', ['jade:compile', 'stylus:compile', 's3:upload']);
+
 };
