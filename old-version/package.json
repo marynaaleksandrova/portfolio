@@ -1,0 +1,27 @@
+{
+  "author": "Maryna Aleksandrova <hello@marynaaleksandrova.info> (http://marynaaleksandrova.info)",
+  "name": "marynaaleksandrova.info",
+  "description": "Maryna Aleksandrova portfolio",
+  "version": "1.0.0-26",
+  "subdomain": "marynaaleksandrova",
+  "domains": [
+    "marynaaleksandrova.info"
+  ],
+  "homepage": "http://marynaaleksandrova.info",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/marynaaleksandrova/portfolio.git"
+  },
+  "main": "server.js",
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  },
+  "dependencies": {
+    "express": "2.x.x"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "server.js"
+  }
+}
