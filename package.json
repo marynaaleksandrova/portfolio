@@ -1,0 +1,32 @@
+{
+  "name": "portfolio",
+  "version": "2.0.0",
+  "description": "Interactive Designer Portfolio",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "~3.8.10"
+  },
+  "devDependencies": {
+    "gulp": "~3.8.10",
+    "gulp-jade": "~0.9.0",
+    "gulp-less": "~1.3.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marynaaleksandrova/portfolio.git"
+  },
+  "keywords": [
+    "static",
+    "website",
+    "portfolio"
+  ],
+  "author": "Maryna Aleksandrova",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marynaaleksandrova/portfolio/issues"
+  },
+  "homepage": "https://github.com/marynaaleksandrova/portfolio"
+}
