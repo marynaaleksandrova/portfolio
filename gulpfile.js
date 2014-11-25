@@ -32,3 +32,8 @@ gulp.task('less', function () {
 gulp.task('build', ['jade', 'less'], function() {
   // Do stuff
 });
+
+var watcher = gulp.watch('src/**/*.*', ['build']);
+watcher.on('change', function(event) {
+  console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+});
