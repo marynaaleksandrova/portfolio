@@ -1,27 +1,24 @@
 {
-  "author": "Maryna Aleksandrova <hello@marynaaleksandrova.info> (http://marynaaleksandrova.info)",
-  "name": "marynaaleksandrova.info",
-  "description": "Maryna Aleksandrova portfolio",
-  "version": "1.0.0-26",
-  "subdomain": "marynaaleksandrova",
-  "domains": [
-    "marynaaleksandrova.info"
-  ],
-  "homepage": "http://marynaaleksandrova.info",
+  "name": "static-app-template",
+  "version": "1.0.0",
+  "description": "static-app-template",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt-cli": "~0.1.6",
+    "jade": "~0.28.2",
+    "stylus": "~0.32.1",
+    "grunt-contrib-jade": "~0.5.0",
+    "grunt": "~0.4.1",
+    "grunt-contrib-stylus": "~0.5.0",
+    "grunt-s3": "~0.1.0",
+    "grunt-contrib-watch": "~0.3.1",
+    "grunt-contrib-concat": "~0.1.3",
+    "grunt-contrib-uglify": "~0.2.0"
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/marynaaleksandrova/portfolio.git"
+    "url": "git://github.com/marynaaleksandrova/static-app-template.git"
   },
-  "main": "server.js",
-  "engines": {
-    "node": "0.8.x",
-    "npm": "1.1.x"
-  },
-  "dependencies": {
-    "express": "2.x.x"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "start": "server.js"
-  }
+  "author": "Maryna Aleksandrova",
+  "license": "MIT"
 }
