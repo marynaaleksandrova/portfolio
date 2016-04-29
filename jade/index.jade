@@ -1,85 +1,42 @@
 doctype 5
 html(lang="en")
-  head
-    title Portfolio
-    link(rel="stylesheet", href="index.css")
-    script(src="app.js")
-      link(href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700', rel='stylesheet', type='text/css')
-  body
-    h1.name Maryna Aleksandrova
-    div.project
-      div.project-info
-        h1 UpdateImpact
-        p UpdateImpact is a tool that allows you visualize, analyze and monitor dependencies tree of your project. The function of the website was to tell potential users about this tool and if / how it can be helpful for them as well as collect some feedback.
-        p 
-          b My role: 
-          | website design and development (HTML/CSS). I also created and developed a series of SVG animations to better illustrate some of the functions of the tool.
-        p 
-          b Tools: 
-          | Adobe Photoshop, Adobe Illustrator, HTML, CSS, SVG, CSS animations, iTerm, Sublime Text, node.js, Jade, Stylus.
-        p
-          a(href="http://www.updateimpact.com/") updateimpact.com 
-    div.project
-      div.project-info
-        h1 Goosta.me
-        p Goosta.me is a prototype of a dating website with the feature of video text-chat. It was created for the Static Showdown Hackathon 2015 and won the second place. 
-        p 
-          b My role: 
-          | visual design and direction of the web app, web app development as well as copywriting.
-        p 
-          b Tools: 
-          | Adobe Photoshop, HTML, CSS, CSS animations, iTerm, Sublime Text, Jade, Stylus.
-        p
-          a(href="http://goosta.me/") goosta.me 
-    div.project
-      div.project-info
-        h1 Scala Times
-        p Scala time is a weekly newsletter about Scala-related news and events. The project consists of newsletter design, website with newsletters archive and stickers design. The main idea behind was to somehow replicate look&rsquo;n&rsquo;feel of classic newspaper.
-        p 
-          b My role: 
-          | design direction, visual design and development of Mailchimp template and website. 
-        p 
-         b Tools: 
-         | Adobe Photoshop, Adobe Illustrator, HTML, CSS, Mailchimp Template Engine, Mailchimp API, iTerm, Sublime Text.
-        p
-          a(href="http://www.scalatimes.com/") scalatimes.com 
-    div.project
-      div.project-info
-        h1 Scalar
-        p  Scalar is a one-day one-track Scala conference in Poland. The conference was founded in 2013.
-        p 
-          b My role: 
-          | is everything imaginable:) It started with creation of the logo and visual identity for the conference. I also designed and developed conference website and newsletters template. I designed multiple printing materials for the conference: roll-ups, stickers, leaflets, banners, name tags, etc.
-        p 
-          b Tools: 
-          | Adobe Photoshop, Adobe Illustrator,  Adobe InDesign, HTML, CSS, Mailchimp Template Engine, iTerm, Sublime Text, Jade, Stylus, Grunt.
-        p
-          a(href="http://www.scalar-conf.com/") scalar-conf.com 
-    div.project
-      div.project-info
-        h1 Codebrag
-        p  Codebrag is an open-source tool for code-reviewing. The main idea of the product is to simplify the process of code review, make it less tense and more fun and positive. It was in development for 2 years (2013-2015) and I was the only designer on the project. I worked closely with UX designer as well as developers.
-        p 
-          b My role: 
-          | design direction, logo design, web app and website design and development.
-        p 
-          b Tools: 
-          | Adobe Photoshop, Adobe Illustrator, SVG, HTML, CSS, Jade, Stylus, node.js, iTerm, Sublime Text, Grunt.
-        p
-          a(href="http://codebrag.com/") codebrag.com 
-    div.links
-      p
-        b 
-          a(href="https://twitter.com/m_aleksandrova") twitter
-      p 
-        b 
-          a(href="https://www.behance.net/aleksandrovamaryna") behance
-      p 
-        b 
-          a(href="https://dribbble.com/marynaaleksandrova") dribbble
-      p 
-        b 
-          a(href="https://github.com/marynaaleksandrova") github
-      p 
-        b 
-          a(href="https://www.linkedin.com/in/marynaaleksandrova") linkedIn
+
+  include head 
+
+  body.index
+    
+    include header
+
+    section.content
+      
+      section.about.section
+        .content-wrapper
+          h1 Hi, my name is Maryna. 
+          p.name-spelling [məˈrēnə]
+          div.intro
+            p I am a designer, thinker (sometimes, over-thinker), traveller, child of post-Soviet Ukraine and an inhabitant of the world.
+            p Through my travels I were able to see and appreciate other cultures, find commonalities and differences, analyze and cherish them. I see the world as One and am generally curious about traditions, culture, food, political and historical background.
+            p I believe in good, and this love and compassion is what I strive to bring to my professional life. Finding an interesting angle to look at the problem, finding a way to express idea in the most authentic way are general rules that I follow in my practice.
+          p
+            a(htef="mailto:hello@marynaaleksandrova.info").hello-link Say hello
+            |.
+
+      section.projects.section.content-wrapper
+        h1.section-title Projects
+
+        div.cyclic.third-large
+          include proj-cyclic
+
+        div.lifelines
+          include proj-lifelines
+
+        div.ctfo
+          include proj-ctfo
+
+        div.goostame
+          include proj-goostame
+
+        div.hashobject
+          include proj-hashobject
+
+      include footer-contact

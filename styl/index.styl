@@ -1,67 +1,695 @@
 @import "normalize.min.css"
 @import "nib"
 
+$mono-font = "mplus-1m", monospace;
+$serif-font = "kings-caslon-display", serif;
+
+$light-gray = #f7f7f7;
+$medium-gray = #dfdfdf;
+$gray = #a2a2a2;
+
+
 body
-  font-family: 'Merriweather', serif;
-  max-width: 700px;
+  font-family: $serif-font;
+  font-weight: 300;
+  line-height: 1.5;
+  padding-top: 65px;
+  color: black;
+  
+.content-wrapper
+  max-width: 1066px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.4;
-  color: #333333;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   
 h1
-  font-size: 2.5em;
-
-h1.name
-  background-color: rgba(255, 0, 210, 0.77);
-  display: inline-block;
-  padding: 0.3em .7em;
-  color: white;
-  font-family: "Helvetica Neue", "Tahoma", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: .7px;
-  font-weight: 200;
-  font-size: 1.2em;
-  margin: 2em 0;
+h2
+h3
+h4
+h5
+h6
+  font-family: $mono-font;
+  font-weight: 400;
   
-
-.project 
-  border-bottom: 1px solid #dadada;
-  padding: 3em 0.5em;
-
-  & h1
-    font-size: 0.85em;
-    font-family: Helvetica, Tahoma, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.7px;
-    border-bottom: 1px solid #b9b9b9;
-    display: inline-block;
-    padding-bottom: 1em;
+section
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
   
-  & b
-    letter-spacing: 0.3px;
-    font-size: 0.8em;
-    
-b
-  font-family: Helvetica, Tahoma, sans-serif;
-  text-transform: uppercase;
+  &.content
+    margin: 0;
+    padding: 0;
     
 a
-  font-size: 0.7em;
-  font-family: Helvetica, Tahoma, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
+  color: inherit;
   text-decoration: none;
-  color: #70FF46;
-  padding: 0 0.2em;
-  margin-left: -0.1em;
-  position: relative;
+  border-bottom: 1px solid $medium-gray;
+  transition: border 300ms;
+  
   &:hover
-    color: white;
-    transition: all 300ms;
-    background-color: #70FF46;
-  &:hover:after
-    content: "\2192"
+    border-bottom: 1px solid #6b6b6b;
+    
+.video iframe
+  min-height: 250px;
+    
+.main-header
+  padding: 0.75rem 0;
+  letter-spacing: 1px;
+  text-align: center;
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.11);
+  z-index: 100;
+  
+  & nav
+    overflow: hidden;
+  
+  & ul
+    margin: 0;
+    padding: 0.5rem 0 0 0;
+    float: right;
+    vertical-align: middle;
+    display: inline-block;
+    font-family: $mono-font;
+    font-weight: 400;
+    font-size: 0.875rem;
+    
+    & li
+      display: inline-block;
+      
+      & a
+        transition: all 300ms;
+        text-transform: uppercase;
+        padding: 0 0.25rem;
+        border-bottom: none;
+        
+        &:after
+          content: '/';
+          position: relative;
+          margin-left: 0.25rem;
+          font-weight: 400;
+          
+      &:last-child a
+        padding-right: 0;
 
-.links
-  padding: 2em 0.5em 1em;
+        &:after
+          display: none;
+        
+      &:last-child a
+        margin-right: 0;
+  
+  & a
+    text-decoration: none;
+    color: black;
+    
+.name
+  display: inline-block;
+  float: left;
+  vertical-align: middle;
+  margin: 0;
+  display: inline-block;
+  
+  & a
+    display: block;
+    line-height: 1;
+    max-height: 32px;
+    border-bottom: none;
+  
+  & img
+    max-height: 32px;
+    
+.project-title
+  margin-bottom: 0;
+  margin-top: 50px;
+  font-size: 3rem;
+  font-weight: 200;
+  margin-left: -0.75rem;
+  padding-left: 0.5rem;
+  margin-right: -0.75rem;
+  letter-spacing: 1px;
+  color: white;
+  
+.project-description
+  margin-top: 0.75rem;
+  font-family: $mono-font;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.3;
+  letter-spacing: 0.75px;
+  
+.project-overview
+  padding-top: 0; 
+  padding-bottom: 20px; 
+    
+  & h1
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2;
+    margin: 0;
+    color: $gray;
+    letter-spacing: 2px;
+  
+  & p
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    
+.info
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  
+  & p:last-child
+    margin-bottom: 0;
+    
+.legend
+  display: block;
+  text-align: left;
+  font-family: $mono-font
+  font-weight: 400;
+  font-size: .875rem;
+  letter-spacing: 0.75px;
+  
+.mobile .legend
+  margin-left: 1.1rem;
+  margin-top: 0.75rem;
+  
+.phone-img
+  max-height: 576px;
+  max-width: 304px;
+  
+.logo
+  text-align: center;
+  
+  & img
+    width: 100%;
+  
+.inspiration
+  text-transform: uppercase;
+  font-family: $mono-font
+  font-weight: 400;
+  font-size: .875rem;
+  letter-spacing: 1px;
+  
+  & .inspo-wrapper
+    text-align: center;
+    position: relative;
+    
+    & img
+      width: 100%;
+  
+    & span
+      display: block;
+      margin-top: 25px;
+      
+  & .plus:after
+    content: "+";
+    position: absolute;
+    font-size: 0.75rem;
+    bottom: 1px;
+    right: -4px;
+    
+  & .arrow:after
+    content: "→";
+    position: absolute;
+    font-size: 0.75rem;
+    bottom: 1px;
+    right: -7px;
+    
+.half
+  width: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  
+  &.gutter:nth-child(odd)
+    padding-right: 1rem;
+    
+  &.gutter:nth-child(even)
+    padding-left: 1rem;
+
+.quarter
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+
+  &:nth-child(odd)
+    padding-right: 0.5rem;
+  
+  &:nth-child(even)
+    padding-left: 0.5rem;    
+
+.palette
+  text-transform: uppercase;
+  font-family: $mono-font
+  font-size: 0.75rem;
+  font-weight: 200;
+  
+  & .color
+    max-width: 192px;
+    color: white;
+    height: 152px;
+    margin-bottom: 1rem;
+    position: relative;
+      
+.color-name
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 0.875rem;
+  opacity: 0.9;
+      
+  & p
+    margin: 0;
+    
+    &:nth-child(odd)
+      letter-spacing: 1px;
+    
+    &:nth-child(even)
+      letter-spacing: 0.75px;
+      
+.half-large
+  position: relative;
+  z-index: 1;
+  
+.mobile
+  text-align: center;
+  
+  & .photo-wrapper
+    display: inline-block;
+    margin-bottom: 50px;
+    
+.photo-wrapper
+  line-height: 1;
+  
+  & img
+    width: 100%;
+  
+.screen 
+  overflow: hidden;
+
+  & img
+    width: 124%;
+    margin-left: -12%;
+
+.hide-for-small
+  display: none;
+  
+.animation .phone-img
+  max-width: 271px;
+  max-height: 571px;      
+
+
+// CTFO
+
+
+$ctfo-blue = #d7e5ed
+$ctfo-orange = #F5E5D4
+$ctfo-green = #30C730
+$ctfo-lime = #c2ec00
+      
+.ctfo
+  & .project-title
+    background-color: black;
+    color: $ctfo-green;
+    
+  & .project-description
+    color: $ctfo-green;
+
+  & .mobile
+    background-color: $ctfo-blue;
+    
+  & .animation
+    background: $ctfo-orange;
+    
+    & .photo-wrapper
+      max-width: 81%;
+      
+
+// Cyclic
+
+      
+$cyclic-orange = #ff4100
+$cyclic-blue = #00b0e3
+$cyclic-dark-blue = #0a2e3e
+$cyclic-green = #34d100
+
+.cyclic
+  & .project-title
+    background-color: $cyclic-orange;
+    
+  & .project-description
+    color: $cyclic-orange;
+    
+  & .logo
+    background-color: $cyclic-dark-blue;
+    
+    & img
+      max-width: 198px;
+    
+  & .inspiration
+    color: $cyclic-orange;
+    background-color: $light-gray;
+    
+    & img
+      max-width: 149px;
+      
+  & .palette
+    
+    & .color
+      
+      &.first
+        background-color: $cyclic-orange;
+        
+      &.second
+        background-color: $cyclic-blue;
+        
+      &.third
+        background-color: $cyclic-dark-blue;
+        
+      &.fourth
+        background-color: $cyclic-green;
+        
+  & .mobile .bg
+    position: absolute;
+    z-index: 0;
+    background-color: $light-gray;
+    top: 0;
+    bottom: 25%;
+    left: 0;
+    right: 0;
+      
+
+// Hashobject
+
+     
+$hashobject-blue = #1ab7ea
+$hashobject-gray = #39434a
+$hashobject-pink = #ed4d96
+$hashobject-green = #57a314
+
+.hashobject
+  & .project-title
+    background-color: $hashobject-blue;
+    
+  & .project-description
+    color: $hashobject-blue;
+    
+  & .logo 
+    border-top: $medium-gray 1px solid;
+
+    & img
+      max-width: 292px;
+    
+  & .inspiration
+    background-color: $hashobject-gray;
+    color: $hashobject-pink;
+    
+    & img
+      max-width: 69px;
+    
+  & .palette
+    
+    & .color
+      
+      &.first
+        background-color: $hashobject-blue;
+        
+      &.second
+        background-color: $hashobject-gray;
+        
+      &.third
+        background-color: $hashobject-pink;
+        
+      &.fourth
+        background-color: $hashobject-green;
+        
+  & .invoice
+    position: relative;
+    color: white;
+    padding-bottom: 50px;
+    
+    & .bg
+      background-color: $hashobject-pink;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 150px;
+      
+    & img
+      max-width: 498px;
+      box-shadow: 0 2.5px 10px rgba(0,0,0,0.25);
+      
+  & .screen
+    background-color: $light-gray;
+      
+
+// Goostame
+
+
+$goostame-orange = #E45B2D
+     
+.goostame
+  & .project-title
+    background-color: black;
+    color: $goostame-orange;
+    
+  & .project-description
+    color: $goostame-orange;
+    
+  & .inspiration
+    background-color: black;
+    color: $light-gray;
+    
+    & span
+      opacity: 0.85;
+
+    & img
+      max-width: 188px;
+      
+    & .inspo-wrapper:nth-child(3) img
+    & .inspo-wrapper:nth-child(4) img
+      margin-top: 50px;
+  
+  & .animation
+    background: url('/img/goostame/pattern-bg.jpg');
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position-y: 81%;
+    background-position-x: 43.5%;
+
+  & .img-animation-wrapper 
+    position: relative;
+    overflow: hidden;
+    
+    & .animation
+      width: 79.6%;
+      position: absolute;
+      top: 8.3%;
+      left: 22.2%;
+      
+  & .logo img
+    max-width: 165px;
+
+  & .half-large
+    & img
+      max-width: 116%;
+      margin-left: -8%;
+      
+  & .screens
+    background-color: $light-gray;
+    
+  & .video
+    background-color: black;
+     
+
+// Lifelines
+
+
+$lifelines-blue = #52489c
+$lifelines-yellow = #ffc107
+  
+.lifelines
+  & .project-title
+    background-color: $lifelines-yellow;
+    font-size: 2.8rem;
+    
+  & .project-description
+    color: $lifelines-blue;
+    
+  & .screen
+    background-color: $lifelines-blue;
+
+  
+// Projects
+
+.section-title
+  font-size: .875rem;
+  text-transform: uppercase;
+  line-height: 2;
+  margin: 0 0 20px;
+  color: $gray;
+  letter-spacing: 2px;
+
+.project
+  width: 100%;
+  display: block;
+  height: 280px;
+  border-bottom: none;
+  text-align: center;
+  margin: 30px 0;
+  padding-top: 10px;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center center;
+  transition: 300ms;
+  position: relative;
+  
+  & h1
+    opacity: 0;
+    position: absolute;
+    color: white;
+    transition: opacity 300ms 100ms;
+    top: 20px;
+    left: 20px;
+    margin: 0;
+    font-size: 1.5rem;
+  
+  & p
+    font-family: $mono-font;
+    font-size: .875rem;
+    text-transform: uppercase;
+    letter-spacing: .75px;
+    color: white;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 300ms 100ms;
+    top: 60px;
+    left: 20px;
+    margin: 0;
+    text-align: left;
+  
+  
+  & .hover
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+  &:hover 
+    border-bottom: none;
+
+    & .hover
+      opacity: 0;
+      transition: background-color 300ms;
+      
+  &.project-hashobject
+    background-color: $hashobject-pink;
+    background-image: url('/img/hashobject/proj-hashobject.png');
+    background-size: 35%;
+    background-repeat: no-repeat;
+    
+  &.project-ctfo
+    background-color: $ctfo-lime;
+    background-image: url('/img/ctfo/proj-ctfo.png');
+    background-repeat: no-repeat;
+    
+  &.project-lifelines
+    background-color: $lifelines-blue;
+    background-image: url('/img/lifelines/proj-lifelines.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    
+  &.project-cyclic
+    background-color: $cyclic-blue;
+    background-image: url('/img/cyclic/proj-cyclic.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    
+  &.project-goostame
+    background-color: $goostame-orange;
+    background-image: url('/img/goostame/proj-goostame.jpg');
+    background-repeat: no-repeat;
+    
+
+.name-spelling
+  font-family: monospace;
+  color: $gray;
+  letter-spacing: 1.5px;
+  font-size: 1.1rem;
+  
+
+// Index page
+.index
+  padding-top: 0;
+  
+  & .about
+    background-color: $light-gray;
+    overflow: hidden;
+    
+    & .name-spelling
+      margin-top: -1rem;
+      
+  & .intro
+    margin-top: 50px;
+    perspective: 1;
+    column-count: 1;
+    column-gap: 25px;
+    text-align: justify;
+    
+    & p
+      margin-top: 0;
+      
+  & .hello-link
+    margin-top: 40px;
+    display: inline-block;
+      
+
+// footer
+footer
+  overflow: hidden;
+  padding: 50px 0 0;
+  background-color: #161616;
+    
+  & .project
+    width: 48%;
+    height: 100px;
+    margin-bottom: 13px;
+    display: inline-block;
+    margin-top: 0;
+    
+    &:nth-child(even)
+      float:right;
+      
+    &:nth-child(odd)
+      float:left;
+      
+  & .footer-contact
+    color: white;
+    opacity: 0.3;
+    
+footer .content-wrapper:first-child
+  padding-bottom: 50px;
+  overflow: hidden;
+      
+.footer-contact
+  border-top: 1px solid $medium-gray;
+  padding-top: 40px;
+  padding-bottom: 50px;
+      
+
+
+    
+@import "media-queries.styl"
+
+
+
+

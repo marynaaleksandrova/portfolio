@@ -3,7 +3,6 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    // aws: grunt.file.readJSON('grunt-aws.json'), // for S3
 
     jade: {
       compile: {
@@ -13,7 +12,12 @@ module.exports = function(grunt) {
           }
         },
         files: {
-          'dist/index.html': ['jade/index.jade']
+          'dist/index.html': ['jade/index.jade'],
+          'dist/cyclic.html': ['jade/cyclic.jade'],
+          'dist/hashobject.html': ['jade/hashobject.jade'],
+          'dist/goostame.html': ['jade/goostame.jade'],
+          'dist/lifelines.html': ['jade/lifelines.jade'],
+          'dist/ctfo.html': ['jade/ctfo.jade']
         }
       }
     },
@@ -30,36 +34,6 @@ module.exports = function(grunt) {
         }
       }
     },
-
-    // s3: {
-    //   key: '<%= aws.key %>',
-    //   secret: '<%= aws.secret %>',
-    //   bucket: '<%= aws.bucket %>',
-    //   access: 'public-read',
-
-    //   // Files to be uploaded.
-    //   upload: [
-    //     {
-    //       src: 'dist/index.html',
-    //       dest: 'index.html',
-    //       gzip: true
-    //     },
-    //     {
-    //       src: 'dist/index.css',
-    //       dest: 'index.css',
-    //       gzip: true
-    //     },
-    //     {
-    //       src: 'dist/robots.txt',
-    //       dest: 'robots.txt'
-    //     },
-    //     {
-    //       src: 'dist/app.js',
-    //       dest: 'app.js',
-    //       gzip: true
-    //     }
-    //   ]
-    // },
 
     concat: {
       options: {
@@ -90,12 +64,11 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-stylus');
-  // grunt.loadNpmTasks('grunt-s3');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('build', ['jade:compile', 'stylus:compile', 'concat:dist']);
-  grunt.registerTask('deploy', ['jade:compile', 'stylus:compile', 'concat:dist', 'uglify:my_target', 's3:upload']);
+  grunt.registerTask('deploy', ['jade:compile', 'stylus:compile', 'concat:dist', 'uglify:my_target']);
 
 };

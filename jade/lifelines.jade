@@ -1,0 +1,48 @@
+doctype 5
+html(lang="en")
+
+  include head 
+
+  body.lifelines
+    
+    include header
+
+    section.content
+
+      header.project-header
+        div.content-wrapper
+          h1.project-title Lifelines.io
+          p.project-description Historical hubs of XX century. Hackathon Project.
+
+      section.project-overview
+        div.content-wrapper
+          div.info
+            h1 Situation
+            p For 
+              a(href="https://twitter.com/clojurecup", target="_blank") ClojureCup 2015
+              |  hackathon our team explored the topic of history of XX century and exactly, how and where famous people met, who knew whom or could have a chance to meet. Is there a possibility that Dali was influenced by Lenin ideas? Was Einstein’s path ever crossed with Hemingway’s travels?
+          div.info
+            h1 Task
+            p In 24 hours design a web app and code frontend part.
+          div.info
+            h1 Year
+            p 2015
+            h1 Website
+            p
+              a(href="http://lifelines.io/", target="_blank") lifelines.io
+
+      section.screen
+        img(src="img/lifelines/main.png")
+
+      section.content-wrapper
+        p In the future we would love to add the possibility to choose people user is interested in, highlight specific places, where they had a chance to meet, and grow in into a comprehensive biographical timeline of people, who influensed history.
+
+    footer
+      .content-wrapper
+        h1.section-title Other projects
+        include proj-cyclic.jade
+        include proj-hashobject.jade
+        include proj-ctfo.jade
+        include proj-goostame.jade
+
+      include footer-contact

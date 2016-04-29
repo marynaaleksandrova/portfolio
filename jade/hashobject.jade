@@ -1,0 +1,91 @@
+doctype 5
+html(lang="en")
+
+  include head 
+
+  body.hashobject
+
+    include header
+
+    section.content
+
+      header.project-header.content-wrapper
+        h1.project-title Hashobject
+        p.project-description Web design and development studio.
+
+      section.project-overview
+        div.content-wrapper
+          div.info
+            h1 Situation
+            p Hashobject is a small studio, that provides web design and development services to clients, as well as launches its own side projects.
+          div.info
+            h1 Task
+            p Create a logo and simple branding to cover basic studio needs&mdash;represent itself in social networks, blogging, business operations.
+          div.info
+            h1 Year
+            p 2013
+            h1 Website
+            p
+              a(href="http://hashobject.com/", target="_blank") hashoject.com
+
+      section.logo
+        .content-wrapper
+          img(src="img/hashobject/logo.png")
+
+
+      section.inspiration
+        .section.content-wrapper
+          div.inspo-wrapper.half.gutter.plus
+            img(src="img/hashobject/hash.png")
+            span Hash Symbol
+          div.inspo-wrapper.gutter.half
+            img(src="img/hashobject/object.png")
+            span Object Symbol
+
+      section.palette
+        div.content-wrapper
+          div.quarter
+            div.color.first
+              div.color-name
+                p #1ab7ea
+                p Primary
+          div.quarter
+            div.color.second
+              div.color-name
+                p #39434a
+                p Secondary
+          div.quarter
+            div.color.third
+              div.color-name
+                p #ed4d96
+                p Secondary
+          div.quarter
+            div.color.fourth
+              div.color-name
+                p #57a314
+                p Secondary
+
+      div.invoice
+        .content-wrapper
+          div.bg
+          section.half-large
+            p Nowadays when most of business interactions are happening online&mdash;finding clients, communication, negotiation, invoicing, payments&mdash;it becomes almost obsolete for small-/ medium-sized studios to have a physical brand identity including branded envelopes, file folders, etc. It is important to create a continuous brand representation across social media, website, blog and cover basic business needs, such as invoicing.
+          div.half-large
+            div.photo-wrapper
+              img(src="img/hashobject/invoice.png")
+
+      section.screen
+        img(src="img/hashobject/blog.png")
+        span.legend.content-wrapper Blog design
+        div.hide-for-small.mobile.photo-wrapper
+          img(src="img/hashobject/ipod.png").phone-img
+
+    footer
+      .content-wrapper
+        h1.section-title Other projects
+        include proj-cyclic.jade
+        include proj-ctfo.jade
+        include proj-lifelines.jade
+        include proj-goostame.jade
+
+      include footer-contact

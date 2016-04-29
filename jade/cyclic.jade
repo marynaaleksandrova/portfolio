@@ -1,0 +1,83 @@
+doctype 5
+html(lang="en")
+
+  include head 
+
+  body.cyclic
+    
+    include header
+
+    section.content
+
+      header.project-header.content-wrapper
+        h1.project-title Cyclic
+        p.project-description Quiz about professional cycling.
+
+      section.project-overview
+        div.content-wrapper
+          div.info
+            h1 Situation
+            p Cyclic is a simple mobile app quiz about professional cycling&mdash;which rider won a race, who was the part of the team during a race, what place took a team during a race.
+          div.info
+            h1 Task
+            p Create a logo and UI design for a mobile app quiz about professional cycling.
+          div.info
+            h1 Year
+            p 2016
+
+      section.logo.section
+        img(src="img/cyclic/logo.png")
+
+      section.inspiration
+        .section.content-wrapper
+          div.inspo-wrapper.half.gutter.plus
+            img(src="img/cyclic/question-marks.png")
+            span Question Marks
+          div.inspo-wrapper.gutter.half
+            img(src="img/cyclic/bike.png")
+            span Road Bike
+
+      section.palette
+        div.content-wrapper
+          div.quarter
+            div.color.first
+              div.color-name
+                p #ff4100
+                p Error
+          div.quarter
+            div.color.second
+              div.color-name
+                p #00b0e3
+                p Primary
+          div.quarter
+            div.color.third
+              div.color-name
+                p #0a2e3e
+                p Secondary
+          div.quarter
+            div.color.fourth
+              div.color-name
+                p #34d100
+                p Success
+
+      section.mobile
+        .content-wrapper
+          div.bg
+          div.half-large
+            div.photo-wrapper
+              img(src="img/cyclic/splash-screen.png").phone-img
+              span.legend Splash screen
+          div.half-large
+            div.photo-wrapper
+              img(src="img/cyclic/main-screen.png").phone-img
+              span.legend Main screen
+
+    footer
+      .content-wrapper
+        h1.section-title Other projects
+        include proj-ctfo.jade
+        include proj-hashobject.jade
+        include proj-lifelines.jade
+        include proj-goostame.jade
+
+      include footer-contact

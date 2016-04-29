@@ -1,0 +1,71 @@
+doctype 5
+html(lang="en")
+
+  include head 
+
+  body.ctfo
+    
+    include header
+
+    section.content
+
+      header.project-header
+        div.content-wrapper
+          h1.project-title CTFO
+          p.project-description Relationship advice iPhone app.
+
+      section.project-overview
+        div.content-wrapper
+          div.info
+            h1 Situation
+            p CTFO (Chill The F*ck Out) is a provocative app, that allows user to get a crowd advice on a tough relationship situation. Users allowed to &ldquo;vote&rdquo; on situations with TFU (That’s F*cked Up) or CTFO only.
+          div.info
+            h1 Task
+            p Create a visually distinctive design for the mobile app.
+          div.info
+            h1 Year
+            p 2015
+            h1 Website
+            p
+              a(href="https://itunes.apple.com/us/app/ctfo/id987170082?mt=8&ign-mpt=uo%3D4", target="_blank") itunes/ctfo
+
+      section.mobile
+        .content-wrapper
+          div.photo-wrapper
+            img(src="img/ctfo/splash.png").phone-img
+            span.legend Splash screen
+          div.photo-wrapper
+            img(src="img/ctfo/card.png").phone-img
+            span.legend Card screen
+          div.photo-wrapper
+            img(src="img/ctfo/create-card.png").phone-img
+            span.legend Create a new card screen
+          div.photo-wrapper
+            img(src="img/ctfo/my-cards.png").phone-img
+            span.legend My cards screen
+          div.photo-wrapper
+            img(src="img/ctfo/comments.png").phone-img
+            span.legend Card comments screen
+
+      section.content-wrapper
+        p During this project I was also responsible for between-state interactions. I would usually create gifs to communicate the idea to the developer.
+
+      section.animation.mobile
+        .content-wrapper
+          div.photo-wrapper.half-large
+            img(src="img/ctfo/animation/agree.gif").phone-img
+            span.legend Vote update animation
+          div.photo-wrapper.half-large
+            img(src="img/ctfo/animation/levelup.gif").phone-img
+            span.legend Level-up animation
+
+    footer
+      .content-wrapper
+        h1.section-title Other projects
+        include proj-cyclic.jade
+        include proj-hashobject.jade
+        include proj-lifelines.jade
+        include proj-goostame.jade
+
+      include footer-contact
+

@@ -1,0 +1,82 @@
+doctype 5
+html(lang="en")
+
+  include head 
+
+  body.goostame
+
+    include header
+
+    section.content
+
+      header.project-header.content-wrapper
+        h1.project-title Goosta.me
+        p.project-description Dating webapp prototype. Hackathon Project.
+
+      section.project-overview
+        div.content-wrapper
+          div.info
+            h1 Situation
+            p Our team created a prototype of a dating webapp for 
+              a(href="https://2015.staticshowdown.com/winners") Static&nbsp;Showdown&nbsp;2015
+              |   hackathon. The main idea behind this webapp lies in realization that to get to know any person at least a little, you need to put some time into it, but with modern dating websites people get judged only by their appearance and few answers to standard questionnaire. 
+            p This project won the 2nd place.
+          div.info
+            h1 Task
+            p In 48 hours design a webapp and code frontend part.
+          div.info
+            h1 Year
+            p 2015
+
+      section.inspiration
+        .content-wrapper
+          div.inspo-wrapper.quarter.arrow
+            img(src="img/goostame/image.jpg")
+            span Image
+          div.inspo-wrapper.quarter.arrow
+            img(src="img/goostame/blurred.jpg")
+            span Blur
+          div.inspo-wrapper.quarter.arrow
+            img(src="img/goostame/posterized.jpg")
+            span Posterize
+          div.inspo-wrapper.quarter
+            img(src="img/goostame/colorized.jpg")
+            span Color
+
+
+      section.screen.animation
+        div.img-animation-wrapper
+          img(src="img/goostame/main.png")
+          img(src="img/goostame/main.gif").animation
+      
+      section.logo.content-wrapper
+        img(src="img/goostame/logo.png")
+        span.legend Logo
+
+      section.screens.content-wrapper
+        .half-large
+          img(src="img/goostame/room-screen.png")
+          span.legend.content-wrapper Room screen
+        .half-large
+          img(src="img/goostame/video-chat-screen.png")
+          span.legend.content-wrapper Chat screen
+
+      section.content-wrapper
+        p With goosta.me user would randomly choose a person to text-chat with. On the background there will be a blurred video of chat-partner. The longer the conversation, the clearer the video becomes. By the time when both users can clearly see each other, they learned some facts about each other and may see the other one through a prism of conversation.
+        p Screencast below shows the experience in action.
+
+      section.video
+        iframe(src="https://player.vimeo.com/video/117853986", width="100%", frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+
+    footer
+      .content-wrapper
+        h1.section-title Other projects
+        include proj-cyclic.jade
+        include proj-hashobject.jade
+        include proj-lifelines.jade
+        include proj-ctfo.jade
+
+      include footer-contact
+
+
+
