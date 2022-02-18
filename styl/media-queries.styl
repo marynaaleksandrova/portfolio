@@ -84,18 +84,43 @@
       
     &.project.project-hashobject
       background-size: 20%;
+  
+
+  .zectr-sgen .ui-system .custom.column-1
+    width: 58%;
+    
+  .zectr-sgen .ui-system .custom.column-2
+    width: 36%;
+
+  .zectr-sgen .ui-system .custom.column-1
+    margin-bottom: 0;
 
 
 
 
 // iphone 6
-@media screen and (min-width: 375px) and (orientation: portrait)
+@media screen and (min-width: 360px) and (orientation: portrait)
   .palette .quater .color
     height: 172px;
+    
+  .one-third
+    width: 100%;
+    
+    &.mobile
+      width: 33%;
+      display: inline-block;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
     
   .goostame .animation
     background-position-y: 64%;
     
+  .zectr-sgen .ui-system .custom.column-1,
+  .zectr-sgen .ui-system .custom.column-2
+    width: 100%;
+
+  .zectr-sgen .ui-system .custom.column-1
+    margin-bottom: 1rem;
 
 
 
@@ -157,17 +182,15 @@
 
 
 @media screen and (min-width: 600px)
-  .index .intro
+  .index .`o
     column-count: 2;
-    max-height: 235px;
     
   footer .project
     height: 140px;
     margin-bottom: 25px;
     
-@media screen and (min-width: 659px)
-  .index .intro
-    max-height: 215px;
+// @media screen and (min-width: 659px)
+//   .index .intro
 
 
 
@@ -191,6 +214,9 @@
     vertical-align: top;
     padding: 0 1rem;
     box-sizing: border-box;
+    
+  .one-third
+    width: 33%;
     
   .hide-for-small
     display: block;
@@ -281,6 +307,36 @@
   .projects
     overflow: hidden;
     
+    & .project-zectr-brand
+      width: 32%;
+      float: left;
+      margin-bottom: 23px;
+    
+    & .project-zectr-sgen
+      width: 65%;
+      float: right;
+      margin-bottom: 23px;
+      
+    & .project-zectr-app
+      width: 32%;
+      float: left;
+      margin-bottom: 22px;
+      
+    & .ux-workshop
+      width: 32%;
+      float: right;
+      margin-bottom: 33px;
+    
+    & .zectr-io-redesign
+      width: 65%;
+      float: left;
+      margin-bottom: 23px;
+      
+    & .dataviz
+      width: 32%;
+      float: right;
+      margin-bottom: 22px;
+
     & .cyclic
       width: 32%;
       float: left;
@@ -290,7 +346,6 @@
       width: 65%;
       float: right;
       margin-bottom: 23px;
-      
       
     & .ctfo
       width: 32%;
@@ -342,7 +397,19 @@
       background: $goostame-orange;
     &.project-hashobject:hover .hover
       background: $hashobject-pink;
-      
+    &.project-zectr-brand:hover .hover
+      background: $zectr-dark-blue;
+    &.project-zectr-sgen:hover .hover
+      background: #73748f;
+    &.project-zectr-app:hover .hover
+      background: #46b7cd;
+    &.project-dataviz:hover .hover
+      background: $zectr-dark-blue;
+    &.project-ux-workshop:hover .hover    
+      background: $zectr-dark-blue;
+    &.project-zectr-io-redesign:hover .hover
+      background: #fedb52;
+
   .footer-contact
     width: 60%;
       
@@ -396,19 +463,19 @@
 
 
       
-@media screen and (min-width: 780px)
-  .index .intro
-    max-height: 186px;
+// @media screen and (min-width: 780px)
+//   .index .intro
+//     max-height: 186px;
  
 
-@media screen and (min-width: 901px)
-  .index .intro
-    max-height: 162px;
+// @media screen and (min-width: 901px)
+//   .index .intro
+//     max-height: 162px;
     
 
-@media screen and (min-width: 957px)
-  .index .intro
-    max-height: 138px;
+// @media screen and (min-width: 957px)
+//   .index .intro
+//     max-height: 138px;
 
 
 
@@ -448,13 +515,23 @@
       &.project-lifelines
         height: 732px;
         
+      &.project-zectr-sgen
+        height: 732px;
+        
+      &.project-zectr-io-redesign
+        height: 732px;
+        
       &.project-cyclic
         background-size: 85%;
       
   .projects .cyclic
   .projects .ctfo
   .projects .lifelines
+  .projects .project-zectr-brand
+  .projects .project-zectr-sgen
     margin-bottom: 32px;
+    
+
 
   
 

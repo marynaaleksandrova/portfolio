@@ -17,7 +17,13 @@ module.exports = function(grunt) {
           'dist/hashobject.html': ['jade/hashobject.jade'],
           'dist/goostame.html': ['jade/goostame.jade'],
           'dist/lifelines.html': ['jade/lifelines.jade'],
-          'dist/ctfo.html': ['jade/ctfo.jade']
+          'dist/ctfo.html': ['jade/ctfo.jade'],
+          'dist/zectr-brand.html': ['jade/zectr-brand.jade'],
+          'dist/zectr-io-redesign.html': ['jade/zectr-io-redesign.jade'],
+          'dist/ux-workshop.html': ['jade/ux-workshop.jade'],
+          'dist/data-viz.html': ['jade/data-viz.jade'],
+          'dist/zectr-app.html': ['jade/zectr-app.jade'],
+          'dist/zectr-sgen.html': ['jade/zectr-sgen.jade']
         }
       }
     },

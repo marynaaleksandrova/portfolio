@@ -1,0 +1,53 @@
+doctype 5
+html(lang="en")
+
+  include head 
+
+  body.data-viz
+    
+    include header
+
+    section.content
+
+      header.project-header.content-wrapper
+        h1.project-title Data Visualization
+        p.project-description Data visualization templates.
+
+      section.project-overview
+        div.content-wrapper
+          div.info
+            h1 Situation
+            p Zectr is in the field of providing business insights to clients, based on survey data. Over the years I had to design multiple data vizualisation templates to accommodate vast variety of data insights.
+
+          div.info
+            h1 Task
+            p The most important task when designing data viz is re-usability. Data can vary drastically, but charts stay the same. So the most challenging aspect if to design chart templates in such way, that they could be used over and over again, while continue looking good (no matter the quality of data) and highlight insights. 
+
+          div.info
+            h1 Year
+            p 2018-2022
+
+
+      section.data-viz-img
+        div.content-wrapper
+          div.half-large
+            img(src="img/dataviz/dataviz1.jpg")
+          div.half-large
+            img(src="img/dataviz/dataviz2.jpg")
+          div.half-large
+            img(src="img/dataviz/dataviz3.jpg")
+          div.half-large
+            img(src="img/dataviz/dataviz4.jpg")
+          div.half-large
+            img(src="img/dataviz/dataviz5.jpg")
+            span.legend Various Data Visualizations
+
+    footer
+      .content-wrapper
+        h1.section-title Other projects
+        include proj-zectr-io-redesign.jade
+        include proj-ux-workshop.jade
+        include proj-zectr-app.jade
+        include proj-zectr-sgen.jade
+
+      include footer-contact

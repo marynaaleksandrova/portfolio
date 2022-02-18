@@ -1,0 +1,131 @@
+doctype 5
+html(lang="en")
+
+  include head 
+  style
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;900&display=swap');
+
+  body.zectr-brand
+    
+    include header
+
+    section.content
+
+      header.project-header.content-wrapper
+        h1.project-title Zectr Logo and Brand
+        p.project-description Logotype and Brand identity.
+
+      section.project-overview
+        div.content-wrapper
+          div.info
+            h1 Situation
+            p At a time when I joined Zectr, my first task was to redesign existing company logo. It was done by non-professional and failed to communicate company values and direction.
+
+          div.info
+            h1 Task
+            p To design a logo and a flexible brand system that would allow the brand to blossom over years. I wanted to keep the original bee, but give it a modern and tech look.
+            p As a result, logo withstanded multiple company pivots from platform-to-service-to-SaaS without losing its authenticity and up-to-date feel.
+          div.info
+            h1 Year
+            p 2017
+
+      section.logo
+        div.quarter
+          img(src="img/zectr-brand/logo-1.jpg")
+        div.quarter
+          img(src="img/zectr-brand/logo-2.jpg")
+        div.quarter
+          img(src="img/zectr-brand/logo-3.jpg")
+        div.quarter
+          img(src="img/zectr-brand/logo-4.jpg")
+        div.content-wrapper
+          span.legend Official logo variation
+
+      section.inspiration-info
+        div.content-wrapper
+          p.info The first Zectr logo referced a bee and a beehive hexagons. It became a starting point in my search for a new sign.
+          p.info
+          p.info
+
+      section.inspiration
+        .content-wrapper
+          div.inspo-wrapper.one-third.mobile.arrow
+            img(src="img/zectr-brand/process-1.jpg")
+            span 1
+          div.inspo-wrapper.one-third.mobile.arrow
+            img(src="img/zectr-brand/process-2.jpg")
+            span 2
+          div.inspo-wrapper.one-third.mobile
+            img(src="img/zectr-brand/process-3.jpg")
+            span 3
+
+      section.logo-variations
+        div.content-wrapper
+          div.quarter
+            img(src="img/zectr-brand/zectr-logo-a.gif")
+          div.quarter
+            img(src="img/zectr-brand/zectr-logo-b.gif")
+          div.quarter
+            img(src="img/zectr-brand/zectr-logo-c.gif")
+          div.quarter
+            img(src="img/zectr-brand/zectr-logo-d.gif")
+          span.legend Logo variations
+
+      section.palette
+        div.content-wrapper
+          div.quarter
+            div.color.first
+              div.color-name
+                p #F7CF24
+                p Accent
+          div.quarter
+            div.color.second
+              div.color-name
+                p #2596B3
+                p Primary
+          div.quarter
+            div.color.third
+              div.color-name
+                p #272A38
+                p Primary
+          div.quarter
+            div.color.fourth
+              div.color-name
+                p #BBBDCF
+                p Secondary
+
+      section.font-info
+        div.content-wrapper
+          p As Zectr been operating their surveys in multiple countries and languages, when looking for a suitable font I had to take that fact into account. I was looking for fonts that would have support for multiple languages, multiple sripts and include many ligatures.
+          p There are not that many free fonts checking all of those boxes. But Rubik is one of them.
+
+      section.font
+        div.content-wrapper
+          div.light.one-third
+            p RUBIK LIGHT
+            p 
+              | abcdefghijklmnopqrstuvwxyz <br>
+              | ABSDEFGHIJKLMNOPQRSTUVWXYZ <br>
+              | 1234567890
+          div.regular.one-third
+            p RUBIK REGULAR
+            p 
+              | abcdefghijklmnopqrstuvwxyz <br>
+              | ABSDEFGHIJKLMNOPQRSTUVWXYZ <br>
+              | 1234567890
+          div.black.one-third
+            p RUBIK BLACK
+            p 
+              | abcdefghijklmnopqrstuvwxyz <br>
+              | ABSDEFGHIJKLMNOPQRSTUVWXYZ <br>
+              | 1234567890
+
+    footer
+      .content-wrapper
+        h1.section-title Other projects
+        include proj-zectr-io-redesign.jade
+        include proj-ux-workshop.jade 
+        include proj-zectr-app.jade 
+        include proj-zectr-sgen.jade  
+
+      include footer-contact

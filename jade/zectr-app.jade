@@ -1,0 +1,66 @@
+doctype 5
+html(lang="en")
+
+  include head 
+
+  body.zectr-app
+    
+    include header
+
+    section.content
+
+      header.project-header.content-wrapper
+        h1.project-title Zectr App
+        p.project-description Update existing survey app.
+
+      section.project-overview
+        div.content-wrapper
+          div.info
+            h1 Situation
+            p Zectr survey app was design as the very first MVP long before I joined the company. It was designed using old brand colors and guidlines.
+
+          div.info
+            h1 Task
+            p To redesign the app in-line with other Zectr products, utilizing design system and brand guidelines.
+            p Create UI for various question types &ndash; single select, single slider, multichoice, multislider, matrix, etc.
+
+          div.info
+            h1 Year
+            p 2021
+
+      section.mobile
+        .content-wrapper
+          div.photo-wrapper.quarter
+            img(src="img/zectr-app/1.png").phone-img
+            span.legend Landing Screen
+          div.photo-wrapper.quarter
+            img(src="img/zectr-app/2.png").phone-img
+            span.legend Single slider
+          div.photo-wrapper.quarter
+            img(src="img/zectr-app/3.png").phone-img
+            span.legend Single slider
+          div.photo-wrapper.quarter
+            img(src="img/zectr-app/4.png").phone-img
+            span.legend Like screen
+          div.photo-wrapper.quarter
+            img(src="img/zectr-app/5.png").phone-img
+            span.legend Multislider
+          div.photo-wrapper.quarter
+            img(src="img/zectr-app/6.png").phone-img
+            span.legend Multichoice
+          div.photo-wrapper.quarter
+            img(src="img/zectr-app/7.png").phone-img
+            span.legend Multichoice
+          div.photo-wrapper.quarter
+            img(src="img/zectr-app/8.png").phone-img
+            span.legend Matrix
+
+    footer
+      .content-wrapper
+        h1.section-title Other projects
+        include proj-zectr-brand.jade
+        include proj-zectr-io-redesign.jade
+        include proj-ux-workshop.jade
+        include proj-dataviz.jade 
+
+      include footer-contact

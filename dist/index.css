@@ -4,6 +4,7 @@ body{font-family:"kings-caslon-display",serif;font-weight:300;line-height:1.5;pa
 h1,h2,h3,h4,h5,h6{font-family:"mplus-1m",monospace;font-weight:400}
 section{padding-top:100px;padding-bottom:100px;position:relative;}
 section.content{margin:0;padding:0}
+section img{max-width:100%}
 a{color:inherit;text-decoration:none;border-bottom:1px solid #dfdfdf;-webkit-transition:border 300ms;-moz-transition:border 300ms;-o-transition:border 300ms;-ms-transition:border 300ms;transition:border 300ms;}
 a:hover{border-bottom:1px solid #6b6b6b}
 .video iframe{min-height:250px}
@@ -27,6 +28,7 @@ a:hover{border-bottom:1px solid #6b6b6b}
 .project-overview p{margin-top:0;margin-bottom:1.5rem}
 .info{margin-top:3rem;margin-bottom:3rem;}
 .info p:last-child{margin-bottom:0}
+.info p:first-child{margin-top:0}
 .legend{display:block;text-align:left;font-family:"mplus-1m",monospace;font-weight:400;font-size:.875rem;letter-spacing:.75px}
 .mobile .legend{margin-left:1.1rem;margin-top:.75rem}
 .phone-img{max-height:576px;max-width:304px}
@@ -37,10 +39,14 @@ a:hover{border-bottom:1px solid #6b6b6b}
 .inspiration .inspo-wrapper img{width:100%}
 .inspiration .inspo-wrapper span{display:block;margin-top:25px}
 .inspiration .plus:after{content:"+";position:absolute;font-size:.75rem;bottom:1px;right:-4px}
+.inspiration .arrow-right:after{content:"→";position:absolute;font-size:.75rem;bottom:1px;right:-4px}
 .inspiration .arrow:after{content:"→";position:absolute;font-size:.75rem;bottom:1px;right:-7px}
 .half{width:50%;display:inline-block;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;vertical-align:top;}
 .half.gutter:nth-child(odd){padding-right:1rem}
 .half.gutter:nth-child(even){padding-left:1rem}
+.one-third{width:33%;display:inline-block;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;vertical-align:top;padding-right:1rem;padding-left:1rem;}
+.one-third.gutter:nth-child(odd){padding-right:1rem}
+.one-third.gutter:nth-child(even){padding-left:1rem}
 .quarter{width:50%;display:inline-block;vertical-align:top;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
 .quarter:nth-child(odd){padding-right:.5rem}
 .quarter:nth-child(even){padding-left:.5rem}
@@ -105,7 +111,55 @@ a:hover{border-bottom:1px solid #6b6b6b}
 .lifelines .project-title{background-color:#ffc107;font-size:2.8rem}
 .lifelines .project-description{color:#52489c}
 .lifelines .screen{background-color:#52489c}
+.zectr-io .project-title{background-color:#f7cf24;color:#272a38}
+.zectr-io .project-description{color:#272a38}
+.zectr-io .balsamiq{border-top:#dfdfdf 1px solid;border-bottom:#dfdfdf 1px solid}
+.zectr-io .home{background-color:#b9e9f5}
+.zectr-io .zectr-io-final{background-color:#f9f9f9}
+.zectr-io .gif{border-top:#dfdfdf 1px solid;}
+.zectr-io .gif .gif{background-color:#ffdc43;border-top:none}
+.ux-workshop .project-title{background-color:#272a38}
+.ux-workshop .project-description{color:#00abc9}
+.ux-workshop .workshop-process{border-top:#dfdfdf 1px solid;}
+.ux-workshop .workshop-process p:first-child{margin-block-start:0}
+.ux-workshop .findings{background-color:#f9f9f9}
+.data-viz .project-title{background-color:#272a38;color:#59de78}
+.data-viz .project-description{color:#ff4387}
+.data-viz .data-viz-img{background-color:#272a38;}
+.data-viz .data-viz-img .legend{color:#bbbdcf}
+.zectr-brand .project-title{background-color:#00abc9;color:#fff}
+.zectr-brand .logo .quarter{padding-left:0;padding-right:0;line-height:0}
+.zectr-brand .logo .info{text-align:left}
+.zectr-brand .logo-variations{border-bottom:1px solid #dfdfdf}
+.zectr-brand .font-info{padding-bottom:1.5rem;background-color:#f9f9f9}
+.zectr-brand .palette .first{background-color:#f7cf24}
+.zectr-brand .palette .second{background-color:#2596b3}
+.zectr-brand .palette .third{background-color:#272a38}
+.zectr-brand .palette .fourth{background-color:#bbbdcf}
+.zectr-brand .font{padding-top:0;font-family:Rubik;background-color:#f9f9f9;}
+.zectr-brand .font p:last-child{word-break:break-all}
+.zectr-brand .font .light{font-weight:300}
+.zectr-brand .font .regular{font-weight:400}
+.zectr-brand .font .black{font-weight:900}
+.zectr-brand .inspiration-info{padding-top:0}
+.zectr-brand .inspiration{background-color:#272a38;color:#bbbdcf;}
+.zectr-brand .inspiration .info{font-family:"kings-caslon-display",serif;text-transform:none;font-size:1rem;letter-spacing:0}
+.zectr-brand .inspiration img{max-height:160px;width:auto}
+.zectr-app .project-title{background-color:#272a38;color:#f7cf24}
+.zectr-app .mobile{background-color:#272a38;}
+.zectr-app .mobile .quarter{padding-left:2rem;padding-right:2rem;}
+.zectr-app .mobile .quarter img{-webkit-box-shadow:2px 4px 15px rgba(0,0,0,0.2);box-shadow:2px 4px 15px rgba(0,0,0,0.2);-webkit-border-radius:7px;border-radius:7px}
+.zectr-app .mobile .quarter .legend{margin-left:0;color:#bbbdcf}
+.zectr-sgen .project-title{background-color:#3fc5e0;color:#272a38}
+.zectr-sgen .research{background-color:#f9f9f9;}
+.zectr-sgen .research img{-webkit-box-shadow:2px 4px 15px rgba(0,0,0,0.2);box-shadow:2px 4px 15px rgba(0,0,0,0.2);margin-top:1rem;margin-bottom:1rem}
+.zectr-sgen .ui-system{background-color:#f9f9f9;}
+.zectr-sgen .ui-system .custom{vertical-align:top;display:inline-block;padding-right:.5rem;padding-left:.5rem;}
+.zectr-sgen .ui-system .custom.column-1{width:59%}
+.zectr-sgen .ui-system .custom.column-2{width:37%}
+.zectr-sgen .screens-info{padding-top:0;padding-bottom:0}
 .section-title{font-size:.875rem;text-transform:uppercase;line-height:2;margin:0 0 20px;color:#a2a2a2;letter-spacing:2px}
+.line{display:block}
 .project{width:100%;display:block;height:280px;border-bottom:none;text-align:center;margin:30px 0;padding-top:10px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;background-position:center center;-webkit-transition:300ms;-moz-transition:300ms;-o-transition:300ms;-ms-transition:300ms;transition:300ms;position:relative;}
 .project h1{opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);position:absolute;color:#fff;-webkit-transition:opacity 300ms 100ms;-moz-transition:opacity 300ms 100ms;-o-transition:opacity 300ms 100ms;-ms-transition:opacity 300ms 100ms;transition:opacity 300ms 100ms;top:20px;left:20px;margin:0;font-size:1.5rem}
 .project p{font-family:"mplus-1m",monospace;font-size:.875rem;text-transform:uppercase;letter-spacing:.75px;color:#fff;position:absolute;opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);-webkit-transition:opacity 300ms 100ms;-moz-transition:opacity 300ms 100ms;-o-transition:opacity 300ms 100ms;-ms-transition:opacity 300ms 100ms;transition:opacity 300ms 100ms;top:60px;left:20px;margin:0;text-align:left}
@@ -117,6 +171,12 @@ a:hover{border-bottom:1px solid #6b6b6b}
 .project.project-lifelines{background-color:#52489c;background-image:url("/img/lifelines/proj-lifelines.png");background-repeat:no-repeat;background-position:bottom right}
 .project.project-cyclic{background-color:#00b0e3;background-image:url("/img/cyclic/proj-cyclic.png");-webkit-background-size:90%;-moz-background-size:90%;background-size:90%;background-repeat:no-repeat;background-position:center bottom}
 .project.project-goostame{background-color:#e45b2d;background-image:url("/img/goostame/proj-goostame.jpg");background-repeat:no-repeat}
+.project.project-zectr-brand{background-color:#272a38;background-image:url("/img/zectr-brand/proj-brand.jpg");background-repeat:no-repeat}
+.project.project-zectr-sgen{background-color:#272a38;background-image:url("/img/zectr-sgen/proj-sgen.jpg");background-repeat:no-repeat}
+.project.project-zectr-app{background-color:#272a38;background-image:url("/img/zectr-app/proj-app.jpg");background-repeat:no-repeat}
+.project.project-zectr-io-redesign{background-color:#272a38;background-image:url("/img/zectr-io/proj-zectr-io.jpg");background-repeat:no-repeat}
+.project.project-ux-workshop{background-color:#272a38;background-image:url("/img/ux-workshop/proj-ux-workshop.jpg");background-repeat:no-repeat}
+.project.project-dataviz{background-color:#272a38;background-image:url("/img/dataviz/proj-dataviz.jpg");background-repeat:no-repeat}
 .name-spelling{font-family:monospace;color:#a2a2a2;letter-spacing:1.5px;font-size:1.1rem}
 .index{padding-top:0;}
 .index .about{background-color:#f7f7f7;overflow:hidden;}
@@ -150,8 +210,15 @@ section{padding-top:70px;padding-bottom:70px}
 .project.project-cyclic{-webkit-background-size:60%;-moz-background-size:60%;background-size:60%}
 .project.project-lifelines{-webkit-background-size:70%;-moz-background-size:70%;background-size:70%}
 .project.project.project-hashobject{-webkit-background-size:20%;-moz-background-size:20%;background-size:20%}
-}@media screen and (min-width: 375px) and (orientation: portrait){.palette .quater .color{height:172px}
+.zectr-sgen .ui-system .custom.column-1{width:58%}
+.zectr-sgen .ui-system .custom.column-2{width:36%}
+.zectr-sgen .ui-system .custom.column-1{margin-bottom:0}
+}@media screen and (min-width: 360px) and (orientation: portrait){.palette .quater .color{height:172px}
+.one-third{width:100%;}
+.one-third.mobile{width:33%;display:inline-block;padding-left:.5rem;padding-right:.5rem}
 .goostame .animation{background-position-y:64%}
+.zectr-sgen .ui-system .custom.column-1,.zectr-sgen .ui-system .custom.column-2{width:100%}
+.zectr-sgen .ui-system .custom.column-1{margin-bottom:1rem}
 }@media screen and (min-height: 375px) and (orientation: landscape){.goostame .animation{background-position-y:51.5%}
 .cyclic .mobile .bg{bottom:35%}
 .project.project-ctfo{-webkit-background-size:100%;-moz-background-size:100%;background-size:100%}
@@ -165,13 +232,13 @@ section{padding-top:70px;padding-bottom:70px}
 .animation .phone-img{max-width:74%}
 .goostame .animation{background-position-y:50.5%}
 footer .project{width:48%}
-}@media screen and (min-width: 600px){.index .intro{-webkit-column-count:2;-moz-column-count:2;column-count:2;max-height:235px}
+}@media screen and (min-width: 600px){.index .`o{-webkit-column-count:2;-moz-column-count:2;column-count:2}
 footer .project{height:140px;margin-bottom:25px}
-}@media screen and (min-width: 659px){.index .intro{max-height:215px}
 }@media screen and (min-width: 737px){body{padding-top:75px}
 section{padding-top:130px;padding-bottom:130px}
 .content-wrapper{padding-left:2.5rem;padding-right:2.5rem}
 .half-large{width:50%;display:inline-block;vertical-align:top;padding:0 1rem;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.one-third{width:33%}
 .hide-for-small{display:block}
 .quarter{width:25%;padding-right:.5rem;padding-left:.5rem}
 .project-overview{padding-top:50px;padding-bottom:100px}
@@ -196,6 +263,12 @@ footer .project:nth-child(even){float:left}
 .project.project-cyclic{-webkit-background-size:55%;-moz-background-size:55%;background-size:55%}
 .project.project-lifelines{-webkit-background-size:85%;-moz-background-size:85%;background-size:85%}
 .projects{overflow:hidden;}
+.projects .project-zectr-brand{width:32%;float:left;margin-bottom:23px}
+.projects .project-zectr-sgen{width:65%;float:right;margin-bottom:23px}
+.projects .project-zectr-app{width:32%;float:left;margin-bottom:22px}
+.projects .ux-workshop{width:32%;float:right;margin-bottom:33px}
+.projects .zectr-io-redesign{width:65%;float:left;margin-bottom:23px}
+.projects .dataviz{width:32%;float:right;margin-bottom:22px}
 .projects .cyclic{width:32%;float:left;margin-bottom:23px}
 .projects .lifelines{width:65%;float:right;margin-bottom:23px}
 .projects .ctfo{width:32%;float:left;margin-bottom:22px}
@@ -214,6 +287,12 @@ footer .project:nth-child(even){float:left}
 .project.project-ctfo:hover .hover{background:#c2ec00}
 .project.project-goostame:hover .hover{background:#e45b2d}
 .project.project-hashobject:hover .hover{background:#ed4d96}
+.project.project-zectr-brand:hover .hover{background:#272a38}
+.project.project-zectr-sgen:hover .hover{background:#73748f}
+.project.project-zectr-app:hover .hover{background:#46b7cd}
+.project.project-dataviz:hover .hover{background:#272a38}
+.project.project-ux-workshop:hover .hover{background:#272a38}
+.project.project-zectr-io-redesign:hover .hover{background:#fedb52}
 .footer-contact{width:60%}
 }@media screen and (min-width: 737px) and (orientation: portrait){.goostame .screens .half-large{width:100%;}
 .goostame .screens .half-large:last-child img{margin-top:50px}
@@ -226,9 +305,6 @@ footer .project:nth-child(odd),footer .project:nth-child(even){float:none}
 footer .project:last-child{margin-right:0}
 .hashobject .invoice .half-large:nth-child(2){padding-right:5.5rem;padding-left:10%;}
 .hashobject .invoice .half-large:nth-child(2) p{margin-top:170px}
-}@media screen and (min-width: 780px){.index .intro{max-height:186px}
-}@media screen and (min-width: 901px){.index .intro{max-height:162px}
-}@media screen and (min-width: 957px){.index .intro{max-height:138px}
 }@media screen and (min-width: 1025px){.ctfo .mobile .photo-wrapper{width:20%}
 .animation .phone-img{max-width:100%}
 .ctfo .mobile.animation .photo-wrapper{width:21%}
@@ -239,7 +315,9 @@ footer .project h1{opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha
 footer .project:hover h1{opacity:1;-ms-filter:none;filter:none}
 .projects .project{margin:0;height:350px;}
 .projects .project.project-lifelines{height:732px}
+.projects .project.project-zectr-sgen{height:732px}
+.projects .project.project-zectr-io-redesign{height:732px}
 .projects .project.project-cyclic{-webkit-background-size:85%;-moz-background-size:85%;background-size:85%}
-.projects .cyclic,.projects .ctfo,.projects .lifelines{margin-bottom:32px}
+.projects .cyclic,.projects .ctfo,.projects .lifelines,.projects .project-zectr-brand,.projects .project-zectr-sgen{margin-bottom:32px}
 }@media screen and (min-width: 1156px){.goostame .img-animation-wrapper .animation{width:728px;top:49px;left:50%;margin-left:-364px}
 }
